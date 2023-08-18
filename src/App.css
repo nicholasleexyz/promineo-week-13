@@ -1,0 +1,21 @@
+.content {
+  display: flex;
+
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: start;
+
+  background: slategrey;
+  margin: 0;
+  /* padding: 2rem; */
+  width: 33vw;
+  max-width: 800px;
+  min-width: 200px;
+  height: fit-content;
+  border: solid white 0.25rem;
+  border-radius: 0.5rem;
+}
+
+input {
+  width: 50%;
+}
