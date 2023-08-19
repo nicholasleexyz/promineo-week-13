@@ -3,6 +3,7 @@
   padding: 0;
   font-family: sans-serif;
   color: grey;
+  font-size: large;
 }
 
 body {
@@ -126,7 +127,7 @@ button {
   }
 }
 
-@media screen and (max-height: 550px) and (max-width: 850px) {
+@media screen and (max-height: 600px) and (max-width: 850px) {
   .navbar {
     display: none;
   }
