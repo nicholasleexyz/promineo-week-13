@@ -2,10 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-}
-
-html {
-  color-scheme: dark;
+  color: grey;
 }
 
 body {
@@ -15,13 +12,13 @@ body {
   align-items: center;
   width: 100vw;
   height: 100vh;
-  background: radial-gradient(circle at top, darkslateblue, darkslategrey);
+  background-color: #8BC6EC;
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
 }
 
 .content {
   width: 100%;
-  height: 100vh;
-
+  height: calc(100vh - 50px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,48 +48,44 @@ h3 {
   max-width: 400px;
   align-items: center;
   justify-content: center;
-
   text-decoration: solid;
   font-size: x-large;
-  color: white;
   text-align: center;
-  background: slategrey;
-  /* background: pink; */
-  /* margin: 10%; */
-  /* padding: 10%; */
+  color: grey;
   border: solid;
   border-color: white;
   border-width: 0.1rem;
-  /* margin: 0.1rem; */
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin-left: 0.1rem;
+  margin-right: 0.1rem;
 }
 
 .navlink:hover {
-  color: darkslategrey;
+  color: white;
 }
 
 .loginContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  background: slategrey;
   margin: 0;
   padding: 1rem;
   width: 50vw;
   max-width: 800px;
   min-width: 300px;
   height: fit-content;
-  border: solid darkslategrey 0.25rem;
+  border: solid white 0.1rem;
   border-radius: 0.5rem;
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .loginItems {
   display: flex;
   width: fit-content;
   height: fit-content;
-  /* background-color: pink; */
   flex-direction: column;
-  /* flex-wrap: wrap; */
   justify-content: start;
   align-items: start;
 }
@@ -117,7 +110,7 @@ button {
   align-self: end;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 850px) {
   .navlink {
     min-width: 100%;
   }
@@ -128,4 +121,17 @@ button {
     display: none;
   }
 
+  .content {
+    height: 100vh;
+  }
+}
+
+@media screen and (max-height: 550px) and (max-width: 850px) {
+  .navbar {
+    display: none;
+  }
+
+  .content {
+    height: 100vh;
+  }
 }
