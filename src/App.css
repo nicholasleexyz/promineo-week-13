@@ -9,9 +9,13 @@ html {
 }
 
 body {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column;
+  align-items: center;
   width: 100vw;
   height: 100vh;
-  background: radial-gradient(circle at center, darkslateblue, darkslategrey);
+  background: radial-gradient(circle at top, darkslateblue, darkslategrey);
 }
 
 .content {
@@ -32,20 +36,19 @@ h3 {
 
 .navbar {
   display: flex;
-  position: fixed;
   justify-content: center;
   align-items: center;
   height: 50px;
-  width: 100%;
+  width: 100vw;
   flex-wrap: wrap;
-  /* background: darkslateblue; */
 }
 
 .navlink {
   display: flex;
-  height: 100%;
-  width: 100%;
-  max-width: 300px;
+  width: calc(25vw - 0.4rem);
+  height: calc(100% - 0.2rem);
+  min-width: 200px;
+  max-width: 400px;
   align-items: center;
   justify-content: center;
 
@@ -59,7 +62,8 @@ h3 {
   /* padding: 10%; */
   border: solid;
   border-color: white;
-  border-width: 0 0.1rem 0 0.1rem;
+  border-width: 0.1rem;
+  /* margin: 0.1rem; */
 }
 
 .navlink:hover {
@@ -111,4 +115,17 @@ button {
   padding: 0.5rem;
   margin-right: 1rem;
   align-self: end;
+}
+
+@media screen and (max-width: 600px) {
+  .navlink {
+    min-width: 100%;
+  }
+}
+
+@media screen and (max-height: 350px) {
+  .navbar {
+    display: none;
+  }
+
 }
