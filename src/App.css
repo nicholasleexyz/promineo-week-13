@@ -11,7 +11,7 @@ html {
 body {
   width: 100vw;
   height: 100vh;
-  background: darkgrey;
+  background: radial-gradient(circle at center, darkslateblue, darkslategrey);
 }
 
 .content {
@@ -37,42 +37,33 @@ h3 {
   align-items: center;
   height: 50px;
   width: 100%;
-  /* background: slateblue; */
+  flex-wrap: wrap;
+  /* background: darkslateblue; */
 }
 
 .navlink {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  max-width: 300px;
+  align-items: center;
+  justify-content: center;
+
   text-decoration: solid;
   font-size: x-large;
   color: white;
   text-align: center;
   background: slategrey;
   /* background: pink; */
-  height: fit-content;
-  width: 20%;
   /* margin: 10%; */
   /* padding: 10%; */
+  border: solid;
+  border-color: white;
+  border-width: 0 0.1rem 0 0.1rem;
 }
 
 .navlink:hover {
   color: darkslategrey;
-}
-
-.navlink:not(:first-child):not(:last-child) {
-  border: solid;
-  border-color: darkslategrey;
-  border-width: 0 0.1rem 0 0.1rem;
-}
-
-.navlink:first-child {
-  border: solid;
-  border-color: darkslategrey;
-  border-width: 0 0.1rem 0 0.2rem;
-}
-
-.navlink:last-child {
-  border: solid;
-  border-color: darkslategrey;
-  border-width: 0 0.2rem 0 0.1rem;
 }
 
 .loginContainer {
@@ -83,9 +74,9 @@ h3 {
   background: slategrey;
   margin: 0;
   padding: 1rem;
-  width: 33vw;
+  width: 50vw;
   max-width: 800px;
-  min-width: 200px;
+  min-width: 300px;
   height: fit-content;
   border: solid darkslategrey 0.25rem;
   border-radius: 0.5rem;
@@ -97,9 +88,9 @@ h3 {
   height: fit-content;
   /* background-color: pink; */
   flex-direction: column;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: start;
-  align-items: end;
+  align-items: start;
 }
 
 .inputs {
@@ -116,6 +107,8 @@ input {
 }
 
 button {
+  display: flex;
   padding: 0.5rem;
   margin-right: 1rem;
+  align-self: end;
 }
