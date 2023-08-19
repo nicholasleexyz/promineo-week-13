@@ -1,11 +1,17 @@
 import './App.css';
 import LoginForm from './LoginForm';
+import NavBar from './NavBar';
 
 function App() {
   return (
+    <>
+    <NavBar></NavBar>
     <div className='content'>
-      <LoginForm></LoginForm>
+      <div className="loginContainer">
+        <LoginForm></LoginForm>
+      </div>
     </div>
+    </>
   );
 }
 
